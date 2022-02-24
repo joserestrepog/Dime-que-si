@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dime que si.</title>
+
+<script>
+document.write("De Jhonny para Daniela."+"<br>"+"<br>"+"<br>");
+document.write("Quieres ser mi novia?"+"<br>"+"<br>");
+var message = 'Lo sabia, te amo.';
+function si() {
+  alert(message);
+}
+
+function no() {
+  var coordenadas = btn.getBoundingClientRect();
+  var arriba = coordenadas.top+Math.random()*(50-30);
+  var izquierda = coordenadas.left+Math.random()*(50-30);
+  document.getElementById('btn').style.position = "absolute";
+  document.getElementById('btn').style.left = izquierda + "px";
+  document.getElementById('btn').style.top = arriba + "px";
+}
+
+function no2() {
+  var coordenadas = btn2.getBoundingClientRect();
+  var arriba = coordenadas.top+Math.random()*(50-30);
+  var izquierda = coordenadas.left+Math.random()*(50-30);
+  document.getElementById('btn2').style.position = "absolute";
+  document.getElementById('btn2').style.left = izquierda + "px";
+  document.getElementById('btn2').style.top = arriba + "px";
+}
+</script>
+</head>
+<body>
+
+  
+
+<form>
+  <p><input value="Si." type="button" onclick="si();" /></p>
+  <p><input value="No." id="btn" type="button" onmousemove="no();" /></p>
+  <p><input value="No sé." id="btn2" type="button" onmousemove="no2();" /></p>
+</form>
+
+</body>
+</html>
